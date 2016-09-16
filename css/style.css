@@ -1,15 +1,4 @@
-@font-face {
-    font-family: 'alex_brushregular';
-    src: url('../fonts/alexbrush-regular-webfont.eot');
-    src: url('../fonts/alexbrush-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/alexbrush-regular-webfont.woff2') format('woff2'),
-         url('../fonts/alexbrush-regular-webfont.woff') format('woff'),
-         url('../fonts/alexbrush-regular-webfont.ttf') format('truetype'),
-         url('../fonts/alexbrush-regular-webfont.svg#alex_brushregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
 
 @font-face {
     font-family: 'bignoodletitlingoblique';
@@ -75,7 +64,7 @@ nav{
 }
 
 #list_nav li a:hover{
-	color:#E6E6E6;
+	color:#D8D8D8;
 	position: relative;
 	left:10px;
 	/*transition: color 0.5s left 1s;*/
@@ -96,16 +85,42 @@ nav{
   	left:150px;
   }
 }
+@keyframes slideincompany {
+  from {
+    left:0;
+    font-size: 100px;
+  }
+  to{
+  	left:150px;
+  	font-size: 120px;
+  }
+}
 #play_of_the_game{
 	font-family: 'bignoodletitlingoblique', sans-serif;
-	position:relative;
-	text-align: right;
-	padding-right: 20%;
-	padding-top: 120px;
+	text-align: left;
+	margin-left: 40%;
+	margin-top: 120px;
 	font-size: 100px;
 	letter-spacing: 0.03em;
 	font-style: italic;
-	 animation-duration: 10s;
+  	left:150px;
+}
+#metier,#specialisation{
+	position:relative;
+	animation-duration: 10s;
   	animation-name: slidein;
   	left:150px;
 }
+#specialisation{
+	margin-left: 20%;
+	font-size: 80px;
+}
+#company{
+	position:relative;
+	margin-left: 10%;
+	color: #FFDD19;
+	animation-duration: 10s;
+  	animation-name: slideincompany;
+  	left:150px;
+}
+
