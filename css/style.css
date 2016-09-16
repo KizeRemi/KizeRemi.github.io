@@ -79,48 +79,79 @@ nav{
 }
 @keyframes slidein {
   from {
-    left:0;
+  	opacity:0;
+    margin-left: 40%;
+  }
+  30%{
+  	opacity: 1;
   }
   to{
-  	left:150px;
+  	margin-left: 50%;
+  }
+}
+@keyframes slideinspecialisation {
+  from {
+    margin-left: 50%;
+    opacity: 0;
+  }
+  10%{
+  	opacity: 0;
+  }
+  20%{
+  	opacity: 1;
+  }
+  to{
+  	margin-left: 60%;
   }
 }
 @keyframes slideincompany {
   from {
-    left:0;
+    margin-left: 45%;
     font-size: 100px;
+    opacity: 0;
+  }
+  5%{
+  	opacity: 0;
+  }
+  15%{
+  	opacity: 1;
   }
   to{
-  	left:150px;
+  	margin-left: 55%;
   	font-size: 120px;
   }
 }
 #play_of_the_game{
 	font-family: 'bignoodletitlingoblique', sans-serif;
 	text-align: left;
-	margin-left: 40%;
 	margin-top: 120px;
 	font-size: 100px;
 	letter-spacing: 0.03em;
 	font-style: italic;
-  	left:150px;
 }
 #metier,#specialisation{
 	position:relative;
+	margin-left: 40%;
 	animation-duration: 10s;
   	animation-name: slidein;
-  	left:150px;
+  	margin-left:50%;
 }
 #specialisation{
-	margin-left: 20%;
+	animation-duration: 10s;
+  	animation-name: slideinspecialisation;
+	margin-left: 60%;
+	opacity: 1;
 	font-size: 80px;
 }
 #company{
 	position:relative;
-	margin-left: 10%;
 	color: #FFDD19;
 	animation-duration: 10s;
+	margin-left: 40%;
+	
   	animation-name: slideincompany;
-  	left:150px;
+  	margin-left: 55%;
+  	opacity: 1;
+  	font-size: 120px;
 }
 
