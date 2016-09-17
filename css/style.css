@@ -74,7 +74,8 @@ nav{
 /*** Gestion bloc myself ***/
 /***************************/
 #bloc_myself{
-	width: 100%;
+	width: 80%;
+	margin: auto;
 	height: 700px;
 	border-style: solid;
     border-width: 1px;
@@ -82,18 +83,18 @@ nav{
 @keyframes slidein {
   from {
   	opacity:0;
-    margin-left: 40%;
+    margin-left: 30%;
   }
   30%{
   	opacity: 1;
   }
   to{
-  	margin-left: 50%;
+  	margin-left: 40%;
   }
 }
 @keyframes slideinspecialisation {
   from {
-    margin-left: 50%;
+    margin-left: 40%;
     opacity: 0;
   }
   10%{
@@ -103,12 +104,12 @@ nav{
   	opacity: 1;
   }
   to{
-  	margin-left: 60%;
+  	margin-left: 65%;
   }
 }
 @keyframes slideincompany {
   from {
-    margin-left: 45%;
+    margin-left: 40%;
     font-size: 100px;
     opacity: 0;
   }
@@ -119,7 +120,7 @@ nav{
   	opacity: 1;
   }
   to{
-  	margin-left: 55%;
+  	margin-left: 50%;
   }
 }
 #play_of_the_game{
@@ -132,26 +133,22 @@ nav{
 }
 #metier,#specialisation{
 	position:relative;
-	margin-left: 40%;
 	animation-duration: 10s;
   	animation-name: slidein;
-  	margin-left:50%;
+  	animation-fill-mode: forwards;
 }
 #specialisation{
 	animation-duration: 10s;
   	animation-name: slideinspecialisation;
-	margin-left: 60%;
-	opacity: 1;
+  	animation-fill-mode: forwards;
 	font-size: 80px;
 }
 #company{
 	position:relative;
 	color: #FFDD19;
 	animation-duration: 10s;
-	margin-left: 40%;
   	animation-name: slideincompany;
-  	margin-left: 55%;
-  	opacity: 1;
+  	animation-fill-mode: forwards;
 }
 /***************************/
 /*** Gestion bloc myself ***/
@@ -164,16 +161,26 @@ nav{
 	display: flex;
 	justify-content: space-around;
 }
-@keyframes slidesocial {
-	from {
-		opacity: 0;
-		margin-left:20% 
-	}
-	to{
-		margin-left: 0%;
-		opacity: 1;
-	}
-}
+ @-moz-keyframes slidesocial {
+    from {
+       margin-left:5%;
+       opacity:0;
+    }
+    to {
+       margin-left:-4%;
+       opacity:1;
+    }
+ }
+ @-webkit-keyframes slidesocial {
+    from {
+       margin-left:100%;
+       opacity: 0;
+    }
+    to {
+       margin-left:90%;
+       opacity:1;
+    }
+ }
 @keyframes growthsocial {
 	from {
 		opacity: 1;
@@ -190,9 +197,11 @@ nav{
 	width: 100px;
 	height: 100px;
 	position: absolute;
-	animation-duration: 1s;
-  	animation-name: slidesocial;
-	animation-fill-mode: forwards;
+    -moz-animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: slidesocial;
+    -webkit-animation-name: slidesocial;
+    -moz-animation-fill-mode:forwards;
 }
 #imgSecondSocial{
 	opacity: 0;
