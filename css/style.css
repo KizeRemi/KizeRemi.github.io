@@ -246,6 +246,11 @@ nav{
 /****************************/
 #bloc_a_propos{
 	background-color: #F2F2F2;
+	text-align: center;
+	display: table-cell;
+	border-spacing: 30px;
+	font-size: 22px;
+	justify-content: space-around;
 }
 #bloc_a_propos:before{
     display:block;
@@ -263,5 +268,23 @@ nav{
 }
 #bloc_a_propos h1{
 	font-size: 50px;
+	margin-top: 20px;
+}
+#bloc_a_propos h2{
+	color: #FFDD19;
+	font-size:40px;
+	margin-bottom: 10px;
+}
+#right_bloc_propos{
+	width:45%;
+	display: table-cell;
+	box-sizing: border-box;
+	text-align: left;
+}
+#left_bloc_propos{
+	width: 45%;
+	display: table-cell;
+	box-sizing: border-box;
+	text-align: left;
 }
 
