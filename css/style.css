@@ -163,68 +163,68 @@ nav{
 }
  @-moz-keyframes slidesocial {
     from {
-       margin-left:5%;
-       opacity:0;
+       transform: translate(30px,0em);
+       opacity: 0;
     }
     to {
-       margin-left:-4%;
+       transform: translate(0px);
        opacity:1;
     }
  }
  @-webkit-keyframes slidesocial {
     from {
-       margin-left:100%;
+       transform: translate(30px,0em);
        opacity: 0;
     }
     to {
-       margin-left:90%;
+       transform: translate(0);
        opacity:1;
     }
  }
-@keyframes growthsocial {
+@keyframes pulsesocial {
 	from {
-		opacity: 1;
-		width: 100px;
-		height: 100px; 
+		transform: scale(1);
 	}
 	to{
-		opacity: 1;
-		width: 120px;
-		height: 120px; 
+		transform: scale(1.1);
 	}
 }
-#social_network img{
+.once_animation{
 	width: 100px;
 	height: 100px;
-	position: absolute;
     -moz-animation-duration: 1s;
     -webkit-animation-duration: 1s;
     -moz-animation-name: slidesocial;
     -webkit-animation-name: slidesocial;
-    -moz-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:both;
 }
-#imgSecondSocial{
+.once_animation:nth-child(2){
 	opacity: 0;
-	animation-delay: 0.25s;
+    -moz-animation-delay: 0.10s;
+    -webkit-animation-delay: 0.10s;
 }
-#imgSecondSocial:hover{
-	animation-duration: 0.5s;
-  	animation-name: growthsocial;
+.once_animation:nth-child(3){
+	opacity: 0;
+    -moz-animation-delay: 0.20s;
+    -webkit-animation-delay: 0.20s;
+}
+.once_animation:nth-child(4){
+	opacity: 0;
+    -moz-animation-delay: 0.30s;
+    -webkit-animation-delay: 0.30s;
+}
+.once_animation:nth-child(5){
+	opacity: 0;
+    -moz-animation-delay: 0.40s;
+    -webkit-animation-delay: 0.40s;
+}
+.once_animation:nth-child(6){
+	opacity: 0;
+    -moz-animation-delay: 0.50s;
+    -webkit-animation-delay: 0.50s;
+}
+.img_pulse:hover{
+  	animation-name: pulsesocial;
+  	animation-duration: 0.2s;
   	animation-fill-mode: forwards;
-}
-#imgThirdSocial{
-	opacity: 0;
-	animation-delay: 0.50s;
-}
-#imgFourthSocial{
-	opacity: 0;
-	animation-delay: 0.75s;
-}
-#imgFifthSocial{
-	opacity: 0;
-	animation-delay: 1s;
-}
-#imgSixthSocial{
-	opacity: 0;
-	animation-delay: 1.25s;
 }
