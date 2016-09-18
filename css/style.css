@@ -319,8 +319,16 @@ nav{
 	text-align: center;
 	width: 100%;
 	font-size: 12px;
+	margin-bottom: 30px;
 }
 #live_tweet h1{
 	font-size: 50px;
 	margin-top: 20px;
+}
+/***************************/
+/*** Gestion bloc footer ***/
+/***************************/
+#footer{
+	text-align: center;
+
 }
