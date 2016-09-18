@@ -267,13 +267,6 @@ nav{
     margin:0 auto;
     padding:4px 0px;
 }
-.title_a_propos{
-	background-color: grey;
-	width: 300px;
-	top: 870px;
-	position: absolute;
-	left: 62.5%;
-}
 #bloc_a_propos h1{
 	font-size: 50px;
 	margin-top: 20px;
@@ -301,7 +294,6 @@ nav{
 	display: table-cell;
 	box-sizing: border-box;
 	text-align: left;
-	padding-top: 5%;
 	padding-left: 5%;
 	padding-right: 5%;
 }
