@@ -62,19 +62,27 @@ nav{
 	color:white;
 	height:100%;
 	left: 0px;
-	  /* on définit la transition pour les navigateurs */
-	-webkit-transition: all 2s; /* Chrome/Safari */
-	-moz-transition: all 2s; /* Firefox (plus trop nécessaire) */
-	transition: all 2s; /* syntaxe officielle */
+	-webkit-transition: all 0.5s; /* Chrome/Safari */
+	-moz-transition: all 0.5s; /* Firefox (plus trop nécessaire) */
+	transition: all 0.5s; /* syntaxe officielle */
 }
 
 #list_nav li a:hover{
 	color:#D8D8D8;
 	position: relative;
 	left:10px;
+	text-shadow: 
 	/*transition: color 0.5s left 1s;*/
 }
-
+#list_nav li a:before{
+	content: "";
+	width: 10px;
+	height: 10px;
+	box-shadow: 0px 0px 10px 20px #FFF;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+}
 /***************************/
 /*** Gestion bloc myself ***/
 /***************************/
@@ -312,6 +320,26 @@ nav{
 	font-size:18px;
 	color: #000;
 }
+#left_bloc_propos button{
+	margin-top: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	opacity: 0.9;
+	border: none;
+	font-size: 14px;
+	height: 50px;
+	width: 200px;
+	background-color: #81BEF7; 
+}
+#left_bloc_propos button:hover{
+	box-shadow: 0 0px 5px 7px #fff;
+}
+/*******************************/
+/*** Gestion bloc competence ***/
+/*******************************/
+
+
 /****************************/
 /*** Gestion bloc twitter ***/
 /****************************/
