@@ -252,7 +252,7 @@ nav{
 	font-size: 22px;
 	justify-content: space-around;
 }
-#bloc_a_propos:before{
+#bloc_a_propos:before, #live_tweet:before{
     display:block;
     clear:both;
     content : "";
@@ -330,9 +330,66 @@ nav{
 /*** Gestion bloc competence ***/
 /*******************************/
 #my_skills{
-
+	text-align: center;
+	height: 400px;
+}
+#my_skills h1{
+	font-size: 50px;
+	margin-top: 20px;
 }
 
+
+#progressbar {
+	border:none;
+    width: 100%;
+    height: 35px;
+    background-color: #fff;
+    padding: 2px;
+    margin: .6em 0;
+    border: 1px #000 double;
+    clear: both;
+}
+progress {
+  -webkit-appearance: none;
+}
+
+::-webkit-progress-bar {
+   background-color: #fff;
+   border-color: white;
+}
+/*
+#progress {
+    background: #A1C969; 
+    height: 15px;
+    width: 0%;
+    max-width: 100%;
+    float: left;
+    -webkit-animation: progress 2s 1 forwards;
+    -moz-animation: progress 2s 1 forwards;
+    -ms-animation: progress 2s 1 forwards;
+    animation: progress 2s 1 forwards;
+}
+
+@-webkit-keyframes progress { 
+    from { }
+
+    to { width: 36% }
+}
+
+@-moz-keyframes progress { 
+    from { }
+    to { width: 36% }
+}
+
+@-ms-keyframes progress { 
+    from { }
+    to { width: 36% }
+}
+
+@keyframes progress { 
+    from { }
+    to { width: 36% }
+}*/
 /****************************/
 /*** Gestion bloc twitter ***/
 /****************************/
@@ -342,6 +399,7 @@ nav{
 	font-size: 12px;
 	margin-bottom: 30px;
 }
+
 #live_tweet h1{
 	font-size: 50px;
 	margin-top: 20px;
