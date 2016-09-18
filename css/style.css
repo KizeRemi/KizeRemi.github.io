@@ -331,23 +331,37 @@ nav{
 /*******************************/
 #my_skills{
 	text-align: center;
-	height: 400px;
+	height: 600px;
 }
 #my_skills h1{
 	font-size: 50px;
 	margin-top: 20px;
 }
+#my_skills h2{
+	font-size: 30px;
+	margin-top: 5px;
+	margin-bottom: 40px;
+}
 
-#skills_line_one{
+#skills_line_one,#skills_line_two, #skills_line_three,#skills_line_four{
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 20px;
 	display: flex;
 	justify-content: space-around;
 }
+.skill_case{
+	width:30%;
+
+}
+.skill_type{
+	margin-top: 7px;
+	color:#585858;
+}
 .myProgress {
   position: relative;
-  width: 30%;
+  width: 100%;
   height: 30px;
   background-color: #ddd;
 }
@@ -358,7 +372,9 @@ nav{
   height: 100%;
   background-color: #4CAF50;
 }
-
+#skills_line_three .myBar,#skills_line_four .myBar{
+  background-color:#FACC2E;
+}
 #label {
   text-align: center;
   line-height: 40px;
