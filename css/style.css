@@ -74,15 +74,6 @@ nav{
 	text-shadow: 
 	/*transition: color 0.5s left 1s;*/
 }
-#list_nav li a:before{
-	content: "";
-	width: 10px;
-	height: 10px;
-	box-shadow: 0px 0px 10px 20px #FFF;
-	-moz-border-radius: 100px;
-	-webkit-border-radius: 100px;
-	border-radius: 100px;
-}
 /***************************/
 /*** Gestion bloc myself ***/
 /***************************/
@@ -338,7 +329,9 @@ nav{
 /*******************************/
 /*** Gestion bloc competence ***/
 /*******************************/
+#my_skills{
 
+}
 
 /****************************/
 /*** Gestion bloc twitter ***/
