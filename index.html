@@ -4,6 +4,9 @@
 
     <head>
         <script src="js/widgets.js"></script>
+
+        <script src="js/jquery.js"></script>
+
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="css/style.css" />
@@ -81,14 +84,26 @@
 
 			</div>
 		</div>
+
 		<div id="my_skills">
 			<h1>MES COMPETENCES</h1>
-				<div id="skill_php">
-					<progress id="progressbar" value="20" max="100"></progress>
+			<div id="skills_line_one">
+				<div class="myProgress" >
+				  <div class="myBar" data-progress="80">
+				    <div id="label">0%</div>
+				  </div>
 				</div>
-				<div id="skill_php">
-					<progress id="progressbar" value="50" max="100"></progress>
+				<div class="myProgress">
+				  <div class="myBar" data-progress="70">
+				    <div id="label">0%</div>
+				  </div>
 				</div>
+				<div class="myProgress" >
+				  <div class="myBar" data-progress="55">
+				    <div id="label">0%</div>
+				  </div>
+				</div>
+			</div>
 		</div>
 		<div id="live_tweet">
 			<h1>LIVE-TWEET</h1>
@@ -100,4 +115,5 @@
 			<h1>En cours de construction</h1>
 		</div>
 	</body>
+	<script src="js/ready.js"></script>
 </html>
