@@ -249,7 +249,7 @@ nav{
 	background-color: #F2F2F2;
 	text-align: center;
 	display: table-cell;
-	border-spacing: 30px;
+	border-spacing: 60px;
 	font-size: 22px;
 	justify-content: space-around;
 }
@@ -271,31 +271,46 @@ nav{
 	font-size: 50px;
 	margin-top: 20px;
 }
-#bloc_a_propos h2{
+#bloc_a_propos h3{
 	color: #FFDD19;
-	font-size:40px;
-	padding-top: 20px;
+	font-size:30px;
 	text-align: center;
 	margin-bottom: 10px;
 }
 #right_bloc_propos{
 	width:45%;
-
-	background-color: #CFCCCC;
+	position: relative;
 	display: table-cell;
+
+	background-color: #fff;
 	box-sizing: border-box;
 	text-align: left;
 	padding-left: 5%;
 	padding-right: 5%;
 }
 #left_bloc_propos{
-	width: 45%;
-	background-color: #CFCCCC;
+	width: 60%;
 	display: table-cell;
 	box-sizing: border-box;
 	text-align: left;
 	padding-left: 5%;
 	padding-right: 5%;
+}
+#left_bloc_propos h2{
+	font-weight: bold;
+	font-size: 30px;
+}
+#left_bloc_propos h3{
+	text-align: left;
+	padding-top: 10px;
+	font-size:20px;
+	color: #000;
+}
+#left_bloc_propos p{
+	text-align: left;
+	padding-top: 10px;
+	font-size:18px;
+	color: #000;
 }
 /****************************/
 /*** Gestion bloc twitter ***/
