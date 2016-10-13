@@ -31,7 +31,18 @@ nav{
 }
 
 /*** Gestion du logo navigation ***/
-#logo_nav {
+#nav_avatar {
+	height: 60px;
+	display: inline-block;
+	text-align: center;
+	background-color: #fff;
+	width:60px;
+}
+#nav_avatar img{
+	width: 100%;
+	border: solid 1px #000;
+}
+#logo_nav{
 	font: normal normal normal 10px Arial,sans-serif;
 	text-transform: uppercase;
 	font-size: 20px;
@@ -44,10 +55,23 @@ nav{
 	float: left;
 	line-height: 60px;
 }
+#me_nav {
+	font: normal normal normal 10px Arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
+	display: inline-block;
+	text-align: center;
+	width: 39.9%;
+	color: #fff;
+	font-style: normal;
+	height: 60px;
+	float: left;
+	line-height: 60px;
+}
 /*** Gestion du menu navigation ***/
 #menu_nav{
 	display: inline-block;
-	width: 70%;
+	width: 60%;
 }
 #list_nav {
 	padding: 0; margin: 0;
