@@ -12,6 +12,13 @@
     font-style: normal;
 
 }
+@font-face {
+    font-family: 'futura';
+    src: url('../fonts/FuturaNo2D.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
 body{
 	font-family: bignoodletitlingoblique;
 	font-size: 32px;
@@ -19,44 +26,41 @@ body{
 }
 nav{
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	background-color: #21294e;
 }
 
 /*** Gestion du logo navigation ***/
 #logo_nav {
-	font-family: 'bignoodletitlingoblique', sans-serif;
-	font-size: 35px;
-	font-weight: bold;
+	font: normal normal normal 10px Arial,sans-serif;
+	text-transform: uppercase;
+	font-size: 20px;
 	display: inline-block;
 	text-align: center;
-	width: 29%;
-	color: #27b4e2;
-	height: 50px;
+	width: 29.9%;
+	color: #fff;
+	font-style: normal;
+	height: 60px;
 	float: left;
 	line-height: 60px;
-	letter-spacing: 0.2em;
-	word-spacing: 30px;
-	font-style: italic;
 }
 /*** Gestion du menu navigation ***/
 #menu_nav{
 	display: inline-block;
 	width: 70%;
-
 }
 #list_nav {
 	padding: 0; margin: 0;
 	text-align: right;
-	height: 50px;
+	height: 60px;
 	width:100%;
 }
 #list_nav li {
 	display: inline-block;
   	justify-content: center;
   	align-items: center;
-  	line-height: 48px;
-  		-webkit-transition: all 0.2s; /* Chrome/Safari */
+  	line-height: 57px;
+  	-webkit-transition: all 0.2s; /* Chrome/Safari */
 	-moz-transition: all 0.2s; /* Firefox (plus trop nécessaire) */
 	transition: all 0.2s; /* syntaxe officielle */
 }
@@ -64,10 +68,8 @@ nav{
 	margin: 0 30px;
 	text-decoration: none;
 	font-style: normal;
-	font-family: Futura,century gothic,arial,sans-serif;
-
-	font-size: 18px;
-	font-weight: 300;
+	font-family: Futura;
+	font-size: 19px;
 	text-transform: uppercase;
 	color: #27b4e2;
 	height:100%;
@@ -87,7 +89,6 @@ nav{
 #list_nav li:after {
   display:block;
   content: '';
-  z-index: 3;
   border-bottom: solid 3px #26fcfc;  
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
@@ -154,6 +155,8 @@ nav{
 	font-size: 100px;
 	letter-spacing: 0.03em;
 	font-style: italic;
+	background: url('../images/ow-background.jpg');
+	height: 100%;
 }
 #metier,#specialisation{
 	position:relative;
@@ -214,7 +217,7 @@ nav{
 	}
 }
 #bloc_social_network{
-	background-color: #F2F2F2;
+	background-color: #f0edf2;
 	text-align: center;
 	padding-top: 45px;
 	width: 100%;
@@ -285,7 +288,7 @@ nav{
     max-width:100%;
     height  : 1px;
     width   : 90%;  /* or 100px */
-    border-top:1px solid #E3E3E3;
+    border-top:5px solid rgba(64,82,117,.5);
     margin:0 auto;
     padding:4px 0px;
 }
@@ -335,15 +338,16 @@ nav{
 	color: #000;
 }
 #left_bloc_propos button{
+	font-family: Futura;
 	margin-top: 20px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
 	opacity: 0.9;
 	border: none;
-	font-size: 14px;
+	font-size: 16px;
 	height: 50px;
-	width: 200px;
+	width: 240px;
 	background-color: #81BEF7; 
 }
 #left_bloc_propos button:hover{
