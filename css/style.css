@@ -20,7 +20,7 @@ body{
 nav{
 	width: 100%;
 	height: 50px;
-	background-color: #81BEF7;
+	background-color: #21294e;
 }
 
 /*** Gestion du logo navigation ***/
@@ -31,7 +31,7 @@ nav{
 	display: inline-block;
 	text-align: center;
 	width: 29%;
-	color: #fff;
+	color: #27b4e2;
 	height: 50px;
 	float: left;
 	line-height: 60px;
@@ -43,6 +43,7 @@ nav{
 #menu_nav{
 	display: inline-block;
 	width: 70%;
+
 }
 #list_nav {
 	padding: 0; margin: 0;
@@ -54,26 +55,45 @@ nav{
 	display: inline-block;
   	justify-content: center;
   	align-items: center;
-  	line-height: 60px;
+  	line-height: 48px;
+  		-webkit-transition: all 0.2s; /* Chrome/Safari */
+	-moz-transition: all 0.2s; /* Firefox (plus trop nécessaire) */
+	transition: all 0.2s; /* syntaxe officielle */
 }
 #list_nav li a {
 	margin: 0 30px;
 	text-decoration: none;
-	color:white;
+	font-style: normal;
+	font-family: Futura,century gothic,arial,sans-serif;
+
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: #27b4e2;
 	height:100%;
 	left: 0px;
-	-webkit-transition: all 0.5s; /* Chrome/Safari */
-	-moz-transition: all 0.5s; /* Firefox (plus trop nécessaire) */
-	transition: all 0.5s; /* syntaxe officielle */
+	-webkit-transition: all 0.2s; /* Chrome/Safari */
+	-moz-transition: all 0.2s; /* Firefox (plus trop nécessaire) */
+	transition: all 0.2s; /* syntaxe officielle */
 }
 
-#list_nav li a:hover{
-	color:#D8D8D8;
-	position: relative;
-	left:10px;
-	text-shadow: 
-	/*transition: color 0.5s left 1s;*/
+#list_nav li:hover{
+	color:#FFF;
+	background-color: #3798d6;	
 }
+#list_nav li:hover a{
+	color:#FFF;	
+}
+#list_nav li:after {
+  display:block;
+  content: '';
+  z-index: 3;
+  border-bottom: solid 3px #26fcfc;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+#list_nav li:hover:after { transform: scaleX(1); }
+
 /***************************/
 /*** Gestion bloc myself ***/
 /***************************/
@@ -329,16 +349,41 @@ nav{
 #left_bloc_propos button:hover{
 	box-shadow: 0 0px 5px 7px #fff;
 }
+/***************************/
+/*** Gestion bloc myself ***/
+/***************************/
+#bloc_formations{
+	text-align: center;
+	padding-top: 20px;
+	height: 600px;
+}
+#bloc_formations h1{
+	font-size: 50px;
+}
+#list_formations{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-around;	
+}
+.formations_case{
+	width: 20%;
+	height: 400px;
+	margin-top: 30px;
+	background-color: grey;
+}
 /*******************************/
 /*** Gestion bloc competence ***/
 /*******************************/
 #my_skills{
 	text-align: center;
+	padding-top: 20px;
 	height: 600px;
 }
 #my_skills h1{
 	font-size: 50px;
-	margin-top: 20px;
 }
 #my_skills h2{
 	font-size: 30px;
