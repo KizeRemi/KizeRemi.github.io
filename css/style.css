@@ -37,10 +37,12 @@ nav{
 	text-align: center;
 	background-color: #fff;
 	width:60px;
+	border-left:5px solid #88fa03;
 }
 #nav_avatar img{
 	width: 100%;
-	border: solid 1px #000;
+	vertical-align: middle;
+	box-sizing: border-box;
 }
 #logo_nav{
 	font: normal normal normal 10px Arial,sans-serif;
@@ -48,12 +50,9 @@ nav{
 	font-size: 20px;
 	display: inline-block;
 	text-align: center;
-	width: 29.9%;
 	color: #fff;
 	font-style: normal;
-	height: 60px;
-	float: left;
-	line-height: 60px;
+	margin-left: 10px;
 }
 #me_nav {
 	font: normal normal normal 10px Arial,sans-serif;
@@ -61,17 +60,15 @@ nav{
 	font-size: 20px;
 	display: inline-block;
 	text-align: center;
-	width: 39.9%;
+	width: 34.9%;
 	color: #fff;
 	font-style: normal;
-	height: 60px;
 	float: left;
-	line-height: 60px;
 }
 /*** Gestion du menu navigation ***/
 #menu_nav{
 	display: inline-block;
-	width: 60%;
+	width: 65%;
 }
 #list_nav {
 	padding: 0; margin: 0;
